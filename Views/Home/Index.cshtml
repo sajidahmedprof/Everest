@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@* <div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+ *@
+<div class="hero-section text-center d-flex align-items-center">
+    <div class="container">
+        <h1 class="display-4 fw-bold">
+            Welcome to @if (Model != null)
+            {
+           
+                
+                @Model.ProfileName
+            }
+            else
+            {
+            <p>No profile data found in the database.</p>
+            }
+        </h1>
+        <p class="lead mt-3">
+            Delivering Excellence in Infrastructure, Electrical, Fire Safety & Civil Works
+        </p>
+        <a href="/Home/Services" class="btn btn-primary mt-3">Our Services</a>
+    </div>
+</div>

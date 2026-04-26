@@ -1,0 +1,50 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.navbar {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.navbar-brand span:first-child {
+    font-size: 16px;
+}
+
+.navbar-brand span:last-child {
+    font-size: 12px;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Use the forward slash starting from the root */
+    background-image: url('/images/logo1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px; /* Force a specific size */
+    opacity: 0.3; /* Make it a bit darker to see it first */
+    z-index: -1;
+    pointer-events: none;
+}
